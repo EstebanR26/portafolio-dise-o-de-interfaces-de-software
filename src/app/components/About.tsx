@@ -8,67 +8,67 @@ const skills = [
     name: 'HTML5',
     color: 'from-orange-500 to-orange-600',
     bgColor: 'bg-orange-500',
-    icon: '🌐',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
   },
   {
     name: 'CSS3',
     color: 'from-blue-500 to-blue-600',
     bgColor: 'bg-blue-500',
-    icon: '🎨',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   },
   {
     name: 'JavaScript',
     color: 'from-yellow-400 to-yellow-500',
     bgColor: 'bg-yellow-400',
-    icon: 'JS',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   },
   {
     name: 'TypeScript',
     color: 'from-blue-600 to-blue-400',
     bgColor: 'bg-blue-600',
-    icon: 'TS',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
   },
   {
     name: 'React',
     color: 'from-cyan-400 to-cyan-500',
     bgColor: 'bg-cyan-400',
-    icon: '⚛️',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
   },
   {
     name: 'Next.js',
     color: 'from-black to-gray-700',
     bgColor: 'bg-black',
-    icon: '▲',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
   },
   {
     name: 'Java',
     color: 'from-red-600 to-orange-500',
     bgColor: 'bg-red-600',
-    icon: '☕',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
   },
   {
     name: 'Python',
     color: 'from-yellow-500 to-blue-500',
     bgColor: 'bg-blue-500',
-    icon: '🐍',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
   },
   {
     name: 'Node.js',
     color: 'from-green-600 to-green-400',
     bgColor: 'bg-green-600',
-    icon: '📦',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/node-js-original.svg',
   },
   {
     name: 'PostgreSQL',
     color: 'from-blue-700 to-blue-500',
     bgColor: 'bg-blue-700',
-    icon: '🐘',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
   },
   {
     name: 'Git',
     color: 'from-orange-600 to-red-600',
     bgColor: 'bg-orange-600',
-    icon: '🔧',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   },
 ];
 
@@ -255,8 +255,12 @@ export function About() {
                       : 'bg-white border-gray-200 hover:border-green-500'
                   }`}
                 >
-                  <div className={`flex items-center justify-center w-10 h-10 rounded-full ${skill.bgColor} text-white font-bold text-sm flex-shrink-0`}>
-                    {skill.icon}
+                  <div className={`flex items-center justify-center w-10 h-10 rounded-full ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-100'} p-2 flex-shrink-0 overflow-hidden`}>
+                    <img 
+                      src={skill.icon} 
+                      alt={skill.name} 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <span className={`font-semibold text-sm ${
                     theme === 'dark' ? 'text-gray-100' : 'text-gray-800'

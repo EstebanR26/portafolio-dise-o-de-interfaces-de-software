@@ -17,34 +17,13 @@ export function Hero() {
         : 'bg-gradient-to-br from-green-50 via-emerald-50 to-white'
     }`}>
       <div className="max-w-7xl mx-auto w-full">
-        <div className="flex flex-col items-center justify-center text-center gap-12">
-          {/* Top content - Image */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-8 lg:gap-16">
+          {/* Text Content */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex justify-center"
-          >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              className="relative"
-            >
-              <div className="absolute -inset-4 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full blur-2xl opacity-20 animate-pulse" />
-              <img
-                src={profileImage}
-                alt="David Esteban Ordoñez Rendon"
-                className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white shadow-2xl"
-              />
-            </motion.div>
-          </motion.div>
-
-          {/* Bottom content - Text */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="space-y-6 flex flex-col items-center"
+            className="flex-1 space-y-6 flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -53,7 +32,7 @@ export function Hero() {
               className="space-y-2"
             >
               <p className="text-green-600 font-medium">{t('hero.greeting')}</p>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold bg-gradient-to-r from-green-600 via-emerald-500 to-green-700 text-transparent bg-clip-text">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-green-600 via-emerald-500 to-green-700 text-transparent bg-clip-text">
                 {t('hero.name')}
               </h1>
               <h2 className={`text-xl md:text-2xl font-medium ${
@@ -78,7 +57,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-4 justify-center"
+              className="flex flex-wrap gap-4 justify-center md:justify-start"
             >
               <Button
                 size="lg"
@@ -183,7 +162,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="flex gap-4 pt-4 justify-center"
+              className="flex gap-4 pt-4 justify-center md:justify-start"
             >
               <motion.a
                 whileHover={{ scale: 1.1, y: -2 }}
@@ -225,6 +204,27 @@ export function Hero() {
               >
                 <Mail size={24} />
               </motion.a>
+            </motion.div>
+          </motion.div>
+
+          {/* Image Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex-shrink-0 order-1 md:order-2"
+          >
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="relative"
+            >
+              <div className="absolute -inset-4 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full blur-2xl opacity-20 animate-pulse" />
+              <img
+                src={profileImage}
+                alt="David Esteban Ordoñez Rendon"
+                className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-cover rounded-full border-4 border-white shadow-2xl"
+              />
             </motion.div>
           </motion.div>
         </div>

@@ -68,7 +68,7 @@ export function Navbar() {
             className="text-xl md:text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-500 text-transparent bg-clip-text cursor-pointer"
             onClick={() => scrollToSection('#home')}
           >
-            Portfolio
+            Esteban Ordoñez
           </motion.div>
 
           {/* Desktop Navigation */}

@@ -53,10 +53,10 @@ const skills = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
   },
   {
-    name: 'Node.js',
-    color: 'from-green-600 to-green-400',
-    bgColor: 'bg-green-600',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/node-js-original.svg',
+    name: 'Tailwind',
+    color: 'from-cyan-400 to-sky-500',
+    bgColor: 'bg-cyan-500',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
   },
   {
     name: 'PostgreSQL',
@@ -249,7 +249,7 @@ export function About() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.05 }}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-2xl border-2 shadow-lg hover:shadow-2xl transition-all cursor-default ${
+                  className={`flex items-center gap-2 px-3 py-3 rounded-2xl border-2 shadow-lg hover:shadow-2xl transition-all cursor-default ${
                     theme === 'dark'
                       ? 'bg-gray-800 border-gray-700 hover:border-green-400'
                       : 'bg-white border-gray-200 hover:border-green-500'
@@ -262,7 +262,7 @@ export function About() {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <span className={`font-semibold text-sm ${
+                  <span className={`font-semibold text-xs sm:text-sm ${
                     theme === 'dark' ? 'text-gray-100' : 'text-gray-800'
                   }`}>
                     {skill.name}
@@ -309,7 +309,7 @@ export function About() {
                   }`}>{t('about.backend')}</h4>
                   <p className={`text-sm ${
                     theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
-                  }`}>Java, Python, Node.js</p>
+                  }`}>Java, Python, Tailwind</p>
                 </motion.div>
               </div>
             </div>

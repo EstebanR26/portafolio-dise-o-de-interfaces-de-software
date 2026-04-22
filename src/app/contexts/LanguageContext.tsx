@@ -120,7 +120,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.follow': 'Sígueme',
     'footer.rights': 'Todos los derechos reservados.',
     'footer.madeWith': 'Hecho con',
-    'footer.using': 'usando React & Tailwind',
+    'footer.location': 'San Juan de Pasto - Nariño - Colombia',
   },
   en: {
     // Navbar
@@ -223,7 +223,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.follow': 'Follow',
     'footer.rights': 'All rights reserved.',
     'footer.madeWith': 'Made with',
-    'footer.using': 'using React & Tailwind',
+    'footer.location': 'San Juan de Pasto - Nariño - Colombia',
   },
   fr: {
     // Navbar
@@ -326,7 +326,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.follow': 'Suivre',
     'footer.rights': 'Tous droits réservés.',
     'footer.madeWith': 'Fait avec',
-    'footer.using': 'utilisant React & Tailwind',
+    'footer.location': 'San Juan de Pasto - Nariño - Colombia',
   },
   de: {
     // Navbar
@@ -429,7 +429,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.follow': 'Folgen',
     'footer.rights': 'Alle Rechte vorbehalten.',
     'footer.madeWith': 'Gemacht mit',
-    'footer.using': 'mit React & Tailwind',
+    'footer.location': 'San Juan de Pasto - Nariño - Colombia',
   },
 };
 

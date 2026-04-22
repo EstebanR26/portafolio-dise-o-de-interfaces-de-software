@@ -137,14 +137,13 @@ export function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className={`text-center flex flex-col sm:flex-row items-center justify-center gap-2 ${
+          className={`text-center flex flex-col items-center justify-center gap-1 ${
             theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
           }`}
         >
           <p>© {currentYear} David Esteban Ordoñez Rendon. {t('footer.rights')}</p>
-          <span className="hidden sm:inline">•</span>
           <p className="flex items-center gap-1">
-            {t('footer.madeWith')} <Heart size={16} className="text-green-500 fill-green-500" /> {t('footer.using')}
+            {t('footer.madeWith')} <Heart size={16} className="text-green-500 fill-green-500" /> {t('footer.location')}
           </p>
         </motion.div>
       </div>
